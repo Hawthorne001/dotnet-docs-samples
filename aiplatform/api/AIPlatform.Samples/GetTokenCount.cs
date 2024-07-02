@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+// [START generativeaionvertexai_gemini_token_count]
 // [START aiplatform_gemini_token_count]
 
 using Google.Cloud.AIPlatform.V1;
@@ -26,7 +27,7 @@ public class GetTokenCount
         string projectId = "your-project-id",
         string location = "us-central1",
         string publisher = "google",
-        string model = "gemini-1.0-pro-002"
+        string model = "gemini-1.5-flash-001"
     )
     {
         var client = new LlmUtilityServiceClientBuilder
@@ -56,3 +57,4 @@ public class GetTokenCount
 }
 
 // [END aiplatform_gemini_token_count]
+// [END generativeaionvertexai_gemini_token_count]
